@@ -1,0 +1,21 @@
+{
+  "name": "4node-web-server-angular-api-rest-handlebars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdvpl/node-web-server-angular-api-rest-handlebars.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdvpl/node-web-server-angular-api-rest-handlebars/issues"
+  },
+  "homepage": "https://github.com/jdvpl/node-web-server-angular-api-rest-handlebars#readme"
+}
