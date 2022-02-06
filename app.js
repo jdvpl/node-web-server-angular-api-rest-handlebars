@@ -23,7 +23,7 @@ app.get('/generic', (req, res)=>{
 })
 app.get('*', (req, res)=>{
   // comodin para las pagians que no eisten
-  res.sendFile(__dirname+'/public/404.html')
+  res.render('404')
 })
 
 app.listen(port, ()=>{
