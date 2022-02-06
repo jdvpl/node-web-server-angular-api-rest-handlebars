@@ -1,8 +1,8 @@
 const express = require("express");
-const port=process.env.PORT || 3000;
 const app=express();
 const hbs=require("hbs");
 require("dotenv").config();
+const port=process.env.PORT || 3000;
 // handlebars
 // partials
 hbs.registerPartials(__dirname + "/views/partials")
