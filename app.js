@@ -1,17 +1,18 @@
 const express = require("express");
 require("dotenv").config();
-
-const app=express();
 const port=process.env.PORT || 3000;
-app.get('/', (req, res)=>{
-  res.send('Hola kisama')
-})
+const app=express();
+
+//servir contenido estatico
+app.use(express.static('public'))
+
+
 app.get('/hola', (req, res)=>{
-  res.send('Hola saitama')
+  res.sendFile(__dirname +'/public/hola.html')
 })
 app.get('*', (req, res)=>{
   // comodin para las pagians que no eisten
-  res.send('Error de pagina, no existe !!!')
+  res.sendFile(__dirname+'/public/404.html')
 })
 
 app.listen(port, ()=>{
