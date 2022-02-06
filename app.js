@@ -3,10 +3,16 @@ require("dotenv").config();
 const port=process.env.PORT || 3000;
 const app=express();
 
+// renderizar handlebars
+app.set('view engine', 'hbs');
 //servir contenido estatico
 app.use(express.static('public'))
 
 
+
+app.get('/', (req, res)=>{
+  res.render('home')
+})
 app.get('/elements', (req, res)=>{
   res.sendFile(__dirname +'/public/elements.html')
 })
